@@ -1,0 +1,16 @@
+the following command lines:
+fciv.exe c:\mydir\myfile.dll
+
+fciv.exe c:\ -r -exc exceptions.txt -sha1 -xml dbsha.xml
+
+fciv.exe c:\mydir -type *.exe
+
+fciv.exe c:\mydir -wp -both -xml db.xml
+To list the hashes that are stored in a database, type a command line that is similar to the following command line:
+fciv.exe -list -sha1 -xml db.xml
+To verify a hash in a file, type a command line that is similar to any one of the following command lines:
+fciv.exe -v -sha1 -xml db.xml
+99
+dd
+dgdg88
+iiiihiui

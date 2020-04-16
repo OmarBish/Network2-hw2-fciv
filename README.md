@@ -16,19 +16,25 @@ to generate the MD5, and SHA1. Store the resulting SHA1 and MD5 in an XML file w
 ./fciv.exe ./tst.txt -sha1 -md5 -xml db.xml
 ```
 this will generate MD5 and SHA1 hash . 
+
+
 MD5:
 > NYr0wf0/q0haLJJyyRTyMQ==
+
 SHA1:
+
 > Nla1XfYzAzFGzB6x3uluA1R1hOw=
+
 and store it in db.xml
---- 
+
+ 
 ## check the validity of the file:
 to check the validity of a file we can use this command 
 ```bash
 ./fciv.exe -v -sha1 -md5 -xml db.xml
 ```
 if everything was good then this command will tell us that every ting is good yo go and the file wasn't modifed but if it was modifed then this command will give a list of modifed files with what the file original hash was and what it become.
----
+
 # demo:
 you can run the run.ps1 powershell script to check this process in action.
 *you need to run `Set-ExecutionPolicy RemoteSigned` in powershell to enable excuting forign scripts*

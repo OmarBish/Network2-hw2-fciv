@@ -39,7 +39,11 @@ Write-Host "
 "
 ./fciv.exe -v -sha1 -xml db.xml
 
+Write-Host "
 
+/_____/_____/_____/_____/_____/_____/_____/
+                                           
+"
 Write-Host "db.xml content"
 Write-Host "
 

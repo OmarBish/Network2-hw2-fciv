@@ -64,3 +64,4 @@ Write-Host "
 "
 ./fciv.exe -v -sha1 -xml db.xml
 git reset --hard HEAD 
+Remove-Item './db.xml'

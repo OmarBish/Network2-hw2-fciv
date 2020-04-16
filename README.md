@@ -36,7 +36,8 @@ to check the validity of a file we can use this command
 if everything was good then this command will tell us that every ting is good yo go and the file wasn't modifed but if it was modifed then this command will give a list of modifed files with what the file original hash was and what it become.
 
 # demo:
-you can run the run.ps1 powershell script to check this process in action.
+you can run the `./run.ps1` powershell script to check this process in action.
+
 *you need to run `Set-ExecutionPolicy RemoteSigned` in powershell to enable excuting forign scripts*
  
 

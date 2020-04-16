@@ -18,26 +18,26 @@ Write-Host "
                                            
 "
 Write-Host "Generate MD5, and SHA1 then Store the resulting SHA1 and MD5 in an XML file"
-Write-Host "command:- ./fciv.exe tst.txt -sha1 -xml db.xml "
+Write-Host "command:- ./fciv.exe tst.txt -sha1 -md5 -xml db.xml "
 Write-Host "
 
 /_____/_____/_____/_____/_____/_____/_____/
                                            
 "
-./fciv.exe tst.txt -sha1 -xml db.xml
+./fciv.exe tst.txt -sha1 -md5 -xml db.xml
 Write-Host "
 
 /_____/_____/_____/_____/_____/_____/_____/
                                            
 "
 Write-Host "Check the validity of the generated file"
-Write-Host "command:- ./fciv.exe -v -sha1 -xml db.xml"
+Write-Host "command:- ./fciv.exe -v -sha1 -md5 -xml db.xml"
 Write-Host "
 
 /_____/_____/_____/_____/_____/_____/_____/
                                            
 "
-./fciv.exe -v -sha1 -xml db.xml
+./fciv.exe -v -sha1 -md5 -xml db.xml
 
 Write-Host "
 
@@ -75,12 +75,12 @@ Write-Host "
                                            
 "
 Write-Host "Recheck the validity after update"
-Write-Host "command:- ./fciv.exe -v -sha1 -xml db.xml"
+Write-Host "command:- ./fciv.exe -v -sha1 -md5 -xml db.xml"
 Write-Host "
 
 /_____/_____/_____/_____/_____/_____/_____/
                                            
 "
-./fciv.exe -v -sha1 -xml db.xml
+./fciv.exe -v -sha1 -md5 -xml db.xml
 git reset --hard HEAD 
 Remove-Item './db.xml'

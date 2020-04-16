@@ -12,7 +12,7 @@ In this Assignment, you are asked to do the followings
 # Steps:
 ## generate MD5 & SHA1:
 to generate the MD5, and SHA1. Store the resulting SHA1 and MD5 in an XML file we can use the following command.
-```bash
+```shell
 ./fciv.exe ./tst.txt -sha1 -md5 -xml db.xml
 ```
 this will generate MD5 and SHA1 hash . 
@@ -30,7 +30,7 @@ and store it in db.xml
  
 ## check the validity of the file:
 to check the validity of a file we can use this command 
-```bash
+```shell
 ./fciv.exe -v -sha1 -md5 -xml db.xml
 ```
 if everything was good then this command will tell us that every ting is good yo go and the file wasn't modifed but if it was modifed then this command will give a list of modifed files with what the file original hash was and what it become.
@@ -41,8 +41,7 @@ you can run the run.ps1 powershell script to check this process in action.
  
 
 sample code output :
-```bash
-
+```shell
 
   ^   ^   ^   ^   ^   ^   ^       ^
  /N\ /e\ /t\ /w\ /o\ /r\ /k\     /2\
@@ -61,8 +60,8 @@ sample code output :
 /_____/_____/_____/_____/_____/_____/_____/
 
 
-Generate MD5, and SHA1 then Store the resulting SHA1 and MD5 in an XML file
-command:- ./fciv.exe tst.txt -sha1 -md5 -xml db.xml
+# Generate MD5, and SHA1 then Store the resulting SHA1 and MD5 in an XML file
+# command:- ./fciv.exe tst.txt -sha1 -md5 -xml db.xml
 
 
 /_____/_____/_____/_____/_____/_____/_____/
@@ -78,8 +77,8 @@ Create New XML database
 /_____/_____/_____/_____/_____/_____/_____/
 
 
-Check the validity of the generated file
-command:- ./fciv.exe -v -sha1 -md5 -xml db.xml
+# Check the validity of the generated file
+# command:- ./fciv.exe -v -sha1 -md5 -xml db.xml
 
 
 /_____/_____/_____/_____/_____/_____/_____/
@@ -89,18 +88,18 @@ command:- ./fciv.exe -v -sha1 -md5 -xml db.xml
 // File Checksum Integrity Verifier version 2.05.
 //
 Could not create the registry key.
-Starting checksums verification : 04/16/2020 at 21h29'35
+Starting checksums verification : 04/16/2020 at 21h57'43
 
 All files verified successfully
 
-End Verification : 04/16/2020 at 21h29'35
+End Verification : 04/16/2020 at 21h57'43
 
 
 
 /_____/_____/_____/_____/_____/_____/_____/
 
 
-db.xml content
+# db.xml content
 
 
 /_____/_____/_____/_____/_____/_____/_____/
@@ -115,9 +114,9 @@ db.xml content
 /_____/_____/_____/_____/_____/_____/_____/
 
 
-Modify the file:-
-command:-Add-Content ./tst.txt 'New Text'
-command:-git diff
+# Modify the file:-
+# command:-Add-Content ./tst.txt 'New Text'
+# command:-git diff
 
 
 /_____/_____/_____/_____/_____/_____/_____/
@@ -139,8 +138,8 @@ index 5ff32d0..f788240 100644
 /_____/_____/_____/_____/_____/_____/_____/
 
 
-Recheck the validity after update
-command:- ./fciv.exe -v -sha1 -md5 -xml db.xml
+# Recheck the validity after update
+# command:- ./fciv.exe -v -sha1 -md5 -xml db.xml
 
 
 /_____/_____/_____/_____/_____/_____/_____/
@@ -150,7 +149,7 @@ command:- ./fciv.exe -v -sha1 -md5 -xml db.xml
 // File Checksum Integrity Verifier version 2.05.
 //
 Could not create the registry key.
-Starting checksums verification : 04/16/2020 at 21h29'35
+Starting checksums verification : 04/16/2020 at 21h57'43
 
 List of modified files:
 -----------------------
@@ -163,9 +162,9 @@ tst.txt
         It should be    : 1dc7571cd477786e4648cfc7c31ae936526a7467
 
 
-End Verification : 04/16/2020 at 21h29'35
+End Verification : 04/16/2020 at 21h57'43
 
-HEAD is now at 606efc8 add md5
+HEAD is now at dab2075 add # symbol before comments
 ```
 
 

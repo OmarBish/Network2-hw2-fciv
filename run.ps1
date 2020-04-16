@@ -48,7 +48,7 @@ Write-Host "
                                            
 "
 
-Add-Content ./tst.txt "\nNew Text"
+Add-Content ./tst.txt "New Text"
 git diff
 
 Write-Host "
@@ -63,3 +63,4 @@ Write-Host "
                                            
 "
 ./fciv.exe -v -sha1 -xml db.xml
+git reset --hard HEAD 
